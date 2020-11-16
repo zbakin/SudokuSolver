@@ -6,11 +6,11 @@ The idea is the have a function(isSolvable()) which checks all possible VALID nu
 
 For example given the Sudoku problem as such:
 
-![alt text](https://github.com/zbakin/SudokuSolver/blob/main/Original.png?raw=true)
+<img src="https://github.com/zbakin/SudokuSolver/blob/main/Original.png" width="330" height="300">
  
  where '0's represent empty squares, the result would be:
  
-![alt text](https://github.com/zbakin/SudokuSolver/blob/main/Solved.png?raw=true)
+<img src="https://github.com/zbakin/SudokuSolver/blob/main/Solved.png" width="330" height="300">
   
   
   Inside isSolvable() function, first hasEmpty() function is called, which checks if an empty space exists. If no, it returns true, which means there is a solution found. Otherwise, we continue. When returning from hasEmpty(), 2 parameters are returned by reference - row, col. They represent the position of first empty space(or 0). Next, the numbers from 1 to 9 are passed to isValidPosition() function to check if the number is valid in that position based on rules of Sudoku. 
